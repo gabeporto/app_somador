@@ -32,7 +32,9 @@ class _LoginPageState extends State<LoginPage> {
               fontSize: 30, 
               fontWeight: FontWeight.bold)
           ),
+
           const SizedBox(height: 30),
+          
           Form(
             key: _formKey,
             child: Column(
@@ -63,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                   },
                 ),
 
-                const SizedBox(height: 30),
+                const SizedBox(height: 20),
 
                 mainButton(
                   buttonText: 'Entrar',
@@ -76,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                       bool loginSuccess = await AccessController.instance.loginApi(_emailController.text, _passwordController.text);
 
                       if(loginSuccess){
-                        navigator.pushNamed('/home');
+                        navigator.pushReplacementNamed('/home', arguments: _emailController.text);
                       } else {
                         messeger.showSnackBar(
                           snackBar(
