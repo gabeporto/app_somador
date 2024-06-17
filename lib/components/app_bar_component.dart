@@ -6,10 +6,10 @@ AppBar appBar() {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(1.0),
           child: Image.asset(
             'assets/images/logo.jpeg',
-            height: 40,
+            height: 35,
           ),
         ),
         const SizedBox(width: 10),
