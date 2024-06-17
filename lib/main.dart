@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:somador/views/home_page.dart';
 import 'package:somador/views/login_page.dart';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:somador/components/app_bar_component.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -10,6 +11,8 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: appBar(),
+    );
   }
 }
